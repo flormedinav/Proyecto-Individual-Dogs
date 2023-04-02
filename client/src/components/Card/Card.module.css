@@ -1,0 +1,143 @@
+.containerCard {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  /* width: 260px; */
+  width: 290px;
+  height: 600px;
+  margin-top: 2rem;
+  /* margin-right: 0.75rem; */
+  border-radius: 30px;
+  background: #ffffff;
+  box-shadow: 7px 7px 20px #bebebe, -7px -7px 20px #ffffff;
+}
+
+.containerCard:hover {
+  transform: translateY(-10px);
+}
+
+.divImageTittle {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  margin-top: 0;
+}
+
+.divTitleCard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  /* width: 300px; */
+  width: 280px;
+  height: 70px;
+  /* background-color: blueviolet; */
+  margin-bottom: 0.5rem;
+}
+
+.titleCard {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.15rem;
+  color: #373435;
+}
+
+.divImageCard {
+  display: flex;
+  justify-content: center;
+  /* width: 300px; */
+  width: 280px;
+  height: 250px;
+  overflow: hidden;
+}
+
+.imageCard {
+  width: 500px;
+}
+
+.divWeight {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  /* width: 300px; */
+  width: 280px;
+  margin-left: 10px;
+  margin-top: 0.5rem;
+  /* background-color: aqua; */
+}
+
+.titleWeight {
+  font-weight: 600;
+  font-size: 1.15rem;
+  color: #373435;
+  margin-bottom: 0.5rem;
+}
+
+.pWeight {
+  color: #373435;
+  font-size: 0.9rem;
+}
+
+.divTemperaments {
+  /* background-color: antiquewhite; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0.5rem;
+  /* width: 300px; */
+  width: 280px;
+  height: 150px;
+  margin-left: 5px;
+}
+
+.titleTemperaments {
+  font-weight: 600;
+  font-size: 1.15rem;
+  color: #373435;
+  margin-bottom: 0.8rem;
+}
+
+.divItemsTemperaments {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.5rem;
+  text-align: center;
+  height: 100px;
+
+  /* background-color: aqua; */
+}
+
+.itemTemperament {
+  width: 130px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  border-radius: 15px;
+  border: none;
+  /* background-color: aqua; */
+  color: #373435;
+  font-size: 0.9rem;
+  background-color: rgb(255, 213, 63);
+  box-shadow: 5px 5px 10px #bebebe, -5px -5px 10px #ffffff;
+}
+
+/* Para pantallas pequeñas (hasta 576px) */
+@media (max-width: 576px) {
+}
+
+/* Para pantallas medianas (de 577px a 768px) */
+@media (min-width: 577px) and (max-width: 768px) {
+}
+
+/* Para pantallas grandes (de 769px a 992px) */
+@media (min-width: 769px) and (max-width: 992px) {
+}
+
+/* Para pantallas extra grandes (de 993px a 1200px) */
+@media (min-width: 993px) and (max-width: 1200px) {
+}

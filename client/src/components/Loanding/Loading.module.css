@@ -1,0 +1,53 @@
+.divLoading {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #edebeb;
+  background-image: url("../../images/huellas\ 2.png");
+}
+
+.imageLoading {
+  height: 120px;
+  /* Establece la duración de la animación */
+  animation-duration: 1s;
+  /* Establece la cantidad de veces que se repetirá la animación */
+  animation-iteration-count: infinite;
+  /* Establece el tipo de animación */
+  animation-timing-function: linear;
+  /* Establece el nombre de la animación (puede ser cualquier nombre que desees) */
+  animation-name: spin;
+}
+
+@keyframes spin {
+  /* Define el estado inicial */
+  from {
+    transform: rotate(0deg);
+  }
+  /* Define el estado final */
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Para pantallas pequeñas (hasta 576px) */
+@media (max-width: 576px) {
+  .imageLoading {
+    height: 100px;
+  }
+}
+
+/* Para pantallas medianas (de 577px a 768px) */
+@media (min-width: 577px) and (max-width: 768px) {
+  .imageLoading {
+    height: 100px;
+  }
+}
+
+/* Para pantallas grandes (de 769px a 992px) */
+@media (min-width: 769px) and (max-width: 992px) {
+  .imageLoading {
+    height: 100px;
+  }
+}

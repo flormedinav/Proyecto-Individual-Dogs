@@ -1,0 +1,177 @@
+.container {
+  display: flex;
+}
+
+.buttonRemoveFilter {
+  margin-top: 5.5rem;
+  background-color: rgb(255, 213, 63);
+  /* box-shadow: 5px 5px 10px #bebebe, -5px -5px 10px #ffffff; */
+  padding: 0.25rem;
+  border-radius: 15px;
+  width: 110px;
+  height: 40px;
+  text-align: center;
+  border: none;
+  text-decoration: none;
+  color: #373435;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.buttonRemoveFilter:hover {
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
+  background-color: rgb(255, 213, 63);
+}
+
+.divFilter,
+.divOrder,
+.divTemperaments {
+  margin-bottom: 2rem;
+  padding-top: 1.5rem;
+  margin-right: 15px;
+}
+
+.titleFilterOrder {
+  margin-top: 0.75rem;
+  font-size: 1.5rem;
+  /* color: rgb(255, 213, 63); */
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.selectFilter,
+.selectOrder {
+  height: 40px;
+  width: 180px;
+  border-radius: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border: 1px solid rgb(255, 213, 63);
+  /* box-shadow: 5px 5px 10px #bebebe, -5px -5px 10px #ffffff; */
+  font-size: 1rem;
+}
+
+.selectTemperaments {
+  height: 40px;
+  width: 220px;
+  border-radius: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border: 1px solid rgb(255, 213, 63);
+  /* box-shadow: 5px 5px 10px #bebebe, -5px -5px 10px #ffffff; */
+  font-size: 1rem;
+}
+
+/* Para pantallas pequeñas (hasta 576px) */
+@media (max-width: 576px) {
+  .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+    width: 90%;
+  }
+
+  .divFilter,
+  .divOrder,
+  .divTemperaments {
+    margin-bottom: 0.5rem;
+    padding-top: 0rem;
+    width: 100%;
+  }
+
+  .titleFilterOrder {
+    margin-top: 0.75rem;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+  }
+
+  .selectFilter,
+  .selectOrder {
+    width: 100%;
+    height: 30px;
+  }
+
+  .selectTemperaments {
+    width: 100%;
+    height: 30px;
+  }
+
+  .buttonRemoveFilter {
+    margin-top: 59px;
+    width: 100%;
+    height: 30px;
+    font-size: 1rem;
+  }
+}
+
+/* Para pantallas medianas (de 577px a 768px) */
+@media (min-width: 577px) and (max-width: 768px) {
+  .buttonRemoveFilter {
+    margin-top: 71px;
+    width: 100px;
+  }
+
+  .divFilter,
+  .divOrder,
+  .divTemperaments {
+    padding-top: 0.5rem;
+  }
+
+  .titleFilterOrder {
+    margin-top: 0.75rem;
+    font-size: 1.3rem;
+    /* color: rgb(255, 213, 63); */
+    color: white;
+
+    margin-bottom: 1.3rem;
+  }
+
+  .selectFilter,
+  .selectOrder {
+    width: 110px;
+  }
+
+  .selectTemperaments {
+    width: 170px;
+  }
+}
+
+/* Para pantallas grandes (de 769px a 992px) */
+@media (min-width: 769px) and (max-width: 992px) {
+  .buttonRemoveFilter {
+    width: 105px;
+  }
+}
+
+/* Para pantallas extra grandes (de 993px a 1200px) */
+@media (min-width: 993px) and (max-width: 1200px) {
+  .buttonRemoveFilter {
+    padding: 0.2rem;
+    width: 95px;
+    height: 40px;
+  }
+
+  .divFilter,
+  .divOrder,
+  .divTemperaments {
+    margin-bottom: 2rem;
+    padding-top: 1.5rem;
+    margin-right: 20px;
+  }
+
+  .titleFilterOrder {
+    margin-top: 0.75rem;
+    font-size: 1.25rem;
+
+    margin-bottom: 1.5rem;
+  }
+
+  .selectFilter,
+  .selectOrder {
+    width: 120px;
+  }
+
+  .selectTemperaments {
+    width: 180px;
+  }
+}

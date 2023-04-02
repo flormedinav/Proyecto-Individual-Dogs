@@ -1,0 +1,175 @@
+.containerGeneralErrors {
+  padding-top: 90px;
+  display: flex;
+  flex-direction: column;
+  height: 90vh;
+}
+
+.divContainerErrors {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.textErrors {
+  margin-top: 200px;
+  text-align: center;
+}
+
+.textStop {
+  font-size: 6rem;
+  padding-bottom: 2rem;
+}
+
+.textError404 {
+  font-size: 4rem;
+  color: #11223a;
+}
+
+.imgErrors {
+  height: 650px;
+}
+
+.buttonBack {
+  background-color: #11223a;
+  /* box-shadow: 5px 5px 10px #bebebe, -5px -5px 10px #ffffff; */
+  padding: 0.25rem;
+  padding-top: 0.5rem;
+  border-radius: 15px;
+  margin-left: 3rem;
+  width: 150px;
+  height: 40px;
+  text-align: center;
+  border: none;
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.buttonBack:hover {
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Para pantallas pequeñas (hasta 576px) */
+@media (max-width: 576px) {
+  .buttonBack {
+    margin-left: 1.5rem;
+  }
+
+  .divContainerErrors {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .textErrors {
+    margin-top: 0px;
+    margin-bottom: 3rem;
+  }
+
+  .textStop {
+    font-size: 2.5rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .textError404 {
+    font-size: 1.5rem;
+  }
+
+  .textErrors {
+    margin-top: 50px;
+  }
+
+  .imgErrors {
+    height: 300px;
+    width: 300px;
+  }
+}
+
+/* Para pantallas medianas (de 577px a 768px) */
+@media (min-width: 577px) and (max-width: 768px) {
+  .buttonBack {
+    margin-left: 1.5rem;
+  }
+
+  .divContainerErrors {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .textErrors {
+    margin-top: 0px;
+    margin-bottom: 3rem;
+  }
+
+  .textStop {
+    font-size: 3rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .textError404 {
+    font-size: 2rem;
+    color: #11223a;
+  }
+
+  .textErrors {
+    margin-top: 50px;
+  }
+
+  .imgErrors {
+    height: 350px;
+    width: 350px;
+  }
+}
+
+/* Para pantallas grandes (de 769px a 992px) */
+@media (min-width: 769px) and (max-width: 992px) {
+  .buttonBack {
+    margin-left: 1.5rem;
+  }
+
+  .textStop {
+    font-size: 4rem;
+    padding-bottom: 2rem;
+  }
+
+  .textError404 {
+    font-size: 3rem;
+    color: #11223a;
+  }
+
+  .textErrors {
+    margin-top: 150px;
+  }
+
+  .imgErrors {
+    margin-top: 3rem;
+    height: 500px;
+  }
+}
+
+/* Para pantallas extra grandes (de 993px a 1200px) */
+@media (min-width: 993px) and (max-width: 1200px) {
+  .textErrors {
+    margin-top: 150px;
+  }
+
+  .imgErrors {
+    height: 600px;
+  }
+}
+
+/* Para pantallas muy grandes (de 1201px a 1400px) */
+@media (min-width: 1201px) and (max-width: 1400px) {
+  .textErrors {
+    margin-top: 150px;
+  }
+
+  .imgErrors {
+    height: 600px;
+  }
+}

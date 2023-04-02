@@ -1,0 +1,158 @@
+.containerGeneral {
+  padding-top: 1.5rem;
+  padding-right: 20px;
+  margin-bottom: 1rem;
+}
+
+.titleSearchBar {
+  margin-top: 0.75rem;
+  font-size: 1.5rem;
+  /* color: rgb(255, 213, 63); */
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.containerSearchBar {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.inputSearchBar {
+  /* width: 300px; */
+  width: 220px;
+  height: 40px;
+  border-radius: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-right: 10px;
+  border: 1px solid rgb(255, 213, 63);
+  /* box-shadow: 5px 5px 10px #bebebe, -5px -5px 10px #ffffff; */
+  font-size: 1rem;
+}
+
+.inputSearchBar:focus {
+  border: 1px solid #373435;
+}
+
+.buttonSearchBar,
+.buttonRemove {
+  padding-top: 0.6rem;
+  padding-bottom: 0.6rem;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  border-radius: 15px;
+  border: none;
+  /* background-color: aqua; */
+  text-decoration: none;
+  color: #373435;
+  font-size: 1rem;
+  background-color: rgb(255, 213, 63);
+  /* box-shadow: 5px 5px 10px #bebebe, -5px -5px 10px #ffffff; */
+  cursor: pointer;
+}
+
+.buttonSearchBar {
+  margin-right: 10px;
+}
+
+.buttonRemove:hover {
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
+  background-color: rgb(255, 213, 63);
+}
+
+.buttonSearchBar:hover {
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
+  background-color: rgb(255, 213, 63);
+}
+
+/* Para pantallas pequeñas (hasta 576px) */
+@media (max-width: 576px) {
+  .titleSearchBar {
+    margin-top: 0rem;
+    font-size: 1.3rem;
+    /* margin-left: 10%; */
+  }
+
+  .containerGeneral {
+    padding-top: 0rem;
+    padding-right: 0px;
+    margin-bottom: 1.5rem;
+    width: 90%;
+  }
+
+  .inputSearchBar {
+    margin-left: 0px;
+    width: 100%;
+    height: 30px;
+    margin-bottom: 1rem;
+    margin-right: 0px;
+  }
+
+  .containerSearchBar {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+  }
+
+  .buttonSearchBar,
+  .buttonRemove {
+    width: 100%;
+    height: 30px;
+    margin-top: 0rem;
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+  }
+
+  .buttonRemove {
+    width: 205%;
+  }
+
+  .buttonSearchBar {
+    margin-right: 0px;
+  }
+}
+
+/* Para pantallas medianas (de 577px a 768px) */
+@media (min-width: 577px) and (max-width: 768px) {
+  .titleSearchBar {
+    font-size: 1.3rem;
+  }
+  .containerGeneral {
+    padding-top: 1rem;
+    padding-right: 0px;
+    margin-bottom: 0;
+  }
+  .inputSearchBar {
+    width: 330px;
+  }
+}
+
+/* Para pantallas grandes (de 769px a 992px) */
+@media (min-width: 769px) and (max-width: 992px) {
+  .containerGeneral {
+    padding-top: 1rem;
+    padding-right: 0px;
+    margin-bottom: 0;
+  }
+  .inputSearchBar {
+    width: 520px;
+  }
+}
+
+/* Para pantallas extra grandes (de 993px a 1200px) */
+@media (min-width: 993px) and (max-width: 1200px) {
+  .titleSearchBar {
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+  }
+  .inputSearchBar {
+    width: 150px;
+  }
+
+  .buttonSearchBar,
+  .buttonRemove {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}

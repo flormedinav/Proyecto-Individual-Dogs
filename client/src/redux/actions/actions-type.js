@@ -1,0 +1,15 @@
+export const GET_ALL_DOGS = "GET_ALL_DOGS";
+export const GET_DETAIL_DOGS = "GET_DETAIL_DOGS";
+export const CLEAR_DETAIL_DOGS = "CLEAR_DETAIL_DOGS";
+export const LOADING_PAGE = "LOADING_PAGE";
+export const PAGE_PAGINADO = "PAGE_PAGINADO";
+export const ON_SEARCH = "ON_SEARCH";
+export const FILTER_SELECT = "FILTER_SELECT";
+export const ORDER_SELECT = "ORDER_SELECT";
+export const TEMPERAMENTS_SELECT = "TEMPERAMENTS_SELECT";
+export const NAME_SEARCH = "NAME_SEARCH";
+export const GET_TEMPERAMENTS = "GET_TEMPERAMENTS";
+export const POST_DOGS = "POST_DOGS";
+export const CREATE_IMAGE = "CREATE_IMAGE";
+
+// export const REDIRECT_PAGE = "REDIRECT_PAGE";

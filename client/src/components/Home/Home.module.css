@@ -1,0 +1,250 @@
+.containerGeneral {
+  padding-top: 70px;
+  width: 100%;
+  display: flex;
+}
+
+.containerInfo {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.containerLandingHome {
+  padding-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 720px;
+  /* height: 75vh; */
+  /* height: 75vh; */
+  width: 100%;
+  background-color: #edebeb;
+  background-image: url("../../images/huellas\ 2.png");
+}
+
+.imageLanding {
+  margin-top: 30px;
+  /* padding-right: 200px; */
+  margin-left: 130px;
+  height: 650px;
+  /* padding-left: 123px; */
+}
+
+.imageLanding img {
+  /* width: 600px; */
+  height: 600px;
+}
+
+.welcomeLanding {
+  display: flex;
+  flex-direction: column;
+  /* padding-left: 200px;
+  padding-right: 121px; */
+}
+
+.welcomeLanding h2 {
+  font-weight: 600;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #373435;
+}
+
+.welcomeLanding img {
+  height: 120px;
+  width: 450px;
+}
+
+.buttonLanding {
+  margin-top: 4rem;
+  background-color: rgb(255, 213, 63);
+  /* box-shadow: 5px 5px 10px #bebebe, -5px -5px 10px #ffffff; */
+  padding: 0.25rem;
+  border-radius: 20px;
+  width: 200px;
+  height: 40px;
+  text-align: center;
+  border: none;
+  text-decoration: none;
+  color: #373435;
+  font-size: 1.25rem;
+  cursor: pointer;
+}
+
+.buttonLanding:hover {
+  box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.5);
+  background-color: #11223a;
+  color: white;
+}
+
+.divSearchFilterOrder {
+  display: flex;
+  justify-content: center;
+  /* height: 25vh; */
+  /* height: 18vh; */
+  height: 170px;
+  width: 100%;
+  background-color: #11223a;
+  background-image: url("../../images/patitas\ para\ azul.png");
+}
+
+/* Para pantallas pequeñas (hasta 576px) */
+@media (max-width: 576px) {
+  .containerLandingHome {
+    padding-top: 1rem;
+    flex-direction: column;
+    height: 600px;
+  }
+
+  .welcomeLanding {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .imageLanding {
+    margin-left: 0px;
+    height: 300px;
+  }
+
+  .imageLanding img {
+    height: 300px;
+  }
+
+  .welcomeLanding h2 {
+    font-weight: 500;
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .welcomeLanding img {
+    height: 50px;
+    width: 200px;
+  }
+
+  .buttonLanding {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    width: 150px;
+    font-size: 1rem;
+  }
+
+  .divSearchFilterOrder {
+    height: 450px;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* Para pantallas medianas (de 577px a 768px) */
+@media (min-width: 577px) and (max-width: 768px) {
+  .containerLandingHome {
+    padding-top: 1rem;
+    flex-direction: column;
+    height: 650px;
+  }
+
+  .welcomeLanding {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .imageLanding {
+    margin-left: 0px;
+    height: 320px;
+  }
+
+  .imageLanding img {
+    height: 320px;
+  }
+
+  .welcomeLanding h2 {
+    font-weight: 500;
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+  }
+
+  .welcomeLanding img {
+    height: 65px;
+    width: 250px;
+  }
+
+  .buttonLanding {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .divSearchFilterOrder {
+    height: 250px;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* Para pantallas grandes (de 769px a 992px) */
+@media (min-width: 769px) and (max-width: 992px) {
+  .containerGeneral {
+    padding-top: 0px;
+  }
+
+  .containerLandingHome {
+    padding-top: 70px;
+    height: 80vh;
+  }
+
+  .imageLanding {
+    margin-left: 30px;
+    height: 500px;
+  }
+
+  .imageLanding img {
+    height: 450px;
+  }
+
+  .welcomeLanding h2 {
+    font-size: 1.5rem;
+  }
+
+  .welcomeLanding img {
+    height: 65px;
+    width: 250px;
+  }
+
+  .divSearchFilterOrder {
+    height: 270px;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* Para pantallas extra grandes (de 993px a 1200px) */
+@media (min-width: 993px) and (max-width: 1200px) {
+  .containerGeneral {
+    padding-top: 0px;
+  }
+
+  .containerLandingHome {
+    padding-top: 70px;
+    height: 80vh;
+  }
+
+  .imageLanding {
+    margin-left: 50px;
+    height: 600px;
+  }
+
+  .imageLanding img {
+    height: 550px;
+  }
+
+  .welcomeLanding h2 {
+    font-size: 2rem;
+  }
+
+  .welcomeLanding img {
+    height: 90px;
+    width: 350px;
+  }
+}

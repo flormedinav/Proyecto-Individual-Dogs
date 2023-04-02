@@ -1,0 +1,154 @@
+.containerGeneral {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 4rem;
+  /* background-image: url("../../images/patitas\ fondo.png");
+  background-color: #edebeb; */
+}
+
+/* .titleCards {
+  padding-top: 2rem;
+  font-size: 2rem;
+  color: #373435;
+  margin-left: 40px;
+} */
+
+.containerCards {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 0;
+  margin-top: 1rem;
+  width: 1200px;
+}
+
+.itemsContainerCards {
+  grid-column: span 1;
+}
+
+.divErrors {
+  margin-top: 2rem;
+  display: flex;
+  width: 1200px;
+  justify-content: space-evenly;
+}
+
+.imgErrors {
+  height: 550px;
+}
+
+.textError {
+  padding-top: 3rem;
+  font-size: 3rem;
+  color: #11223a;
+}
+
+.pError {
+  font-size: 3rem;
+  color: #11223a;
+}
+
+/* Para pantallas pequeñas (hasta 576px) */
+@media (max-width: 576px) {
+  .containerCards {
+    grid-template-columns: repeat(1, 1fr);
+    width: 300px;
+  }
+
+  .divErrors {
+    width: 300px;
+    flex-direction: column;
+  }
+
+  .imgErrors {
+    height: 300px;
+  }
+
+  .textError {
+    padding-top: 1.25rem;
+    font-size: 1.25rem;
+  }
+
+  .pError {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+  }
+}
+
+/* Para pantallas medianas (de 577px a 768px) */
+@media (min-width: 577px) and (max-width: 768px) {
+  .containerCards {
+    grid-template-columns: repeat(1, 1fr);
+    width: 570px;
+  }
+
+  .divErrors {
+    width: 510px;
+  }
+
+  .imgErrors {
+    height: 300px;
+  }
+
+  .textError {
+    padding-top: 1.5rem;
+    font-size: 1.5rem;
+  }
+
+  .pError {
+    font-size: 1.5rem;
+    margin-right: 20px;
+  }
+}
+
+/* Para pantallas grandes (de 769px a 992px) */
+@media (min-width: 769px) and (max-width: 992px) {
+  .containerCards {
+    grid-template-columns: repeat(2, 1fr);
+    width: 700px;
+  }
+
+  .divErrors {
+    width: 700px;
+  }
+
+  .imgErrors {
+    height: 450px;
+  }
+
+  .textError {
+    padding-top: 2rem;
+    font-size: 2rem;
+  }
+
+  .pError {
+    font-size: 2rem;
+  }
+}
+
+/* Para pantallas extra grandes (de 993px a 1200px) */
+@media (min-width: 993px) and (max-width: 1200px) {
+  .containerCards {
+    width: 700px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .divErrors {
+    width: 700px;
+  }
+
+  .imgErrors {
+    height: 450px;
+  }
+
+  .textError {
+    padding-top: 2rem;
+    font-size: 2rem;
+  }
+
+  .pError {
+    font-size: 2rem;
+  }
+}

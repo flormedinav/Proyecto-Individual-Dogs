@@ -1,0 +1,54 @@
+.containerFooter {
+  height: 10vh;
+  background-color: #11223a;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../../images/patitas\ para\ azul.png");
+}
+
+.containerFooter h5 {
+  color: white;
+  font-weight: 400;
+}
+
+.divRedes {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 0.5rem;
+}
+
+.divRedes p {
+  padding-left: 5px;
+  padding-right: 20px;
+}
+
+.divRedes p a {
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  color: white;
+}
+
+.divRedes img {
+  padding-top: 3px;
+  height: 20px;
+  width: 20px;
+}
+
+/* Para pantallas pequeñas (hasta 576px) */
+@media (max-width: 576px) {
+  .divRedes p {
+    padding-right: 15px;
+  }
+
+  .divRedes p a {
+    font-size: 0.75rem;
+  }
+
+  h5 {
+    font-size: 0.75rem;
+  }
+}

@@ -1,0 +1,70 @@
+.container {
+  display: flex;
+  justify-content: center;
+  height: 40px;
+  margin-bottom: 2rem;
+}
+
+.buttonsInitial,
+.buttonsEnd,
+.buttonPrevius,
+.buttonNext,
+.buttonsNumber {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  box-shadow: 5px 5px 5px #bebebe, -5px -5px 3px #ffffff;
+  background-color: white;
+}
+
+.buttonsInitial:hover,
+.buttonNext:hover,
+.buttonsEnd:hover,
+.buttonPrevius:hover,
+.buttonsNumber:hover {
+  background-color: rgb(255, 213, 63);
+}
+
+.buttonsInitial,
+.buttonPrevius,
+.buttonsNumber {
+  margin-right: 5px;
+}
+
+.buttonsEnd,
+.buttonNext {
+  margin-left: 5px;
+}
+
+.activePage {
+  background-color: #11223a;
+  box-shadow: 5px 5px 5px #bebebe, -5px -5px 3px #ffffff;
+  color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+}
+
+@media (max-width: 576px) {
+  .container {
+    height: 27px;
+  }
+
+  .buttonsInitial,
+  .buttonsEnd,
+  .buttonPrevius,
+  .buttonNext,
+  .buttonsNumber {
+    width: 27px;
+    height: 27px;
+  }
+
+  .activePage {
+    width: 27px;
+    height: 27px;
+  }
+}

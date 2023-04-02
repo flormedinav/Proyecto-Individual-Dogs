@@ -1,0 +1,196 @@
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  /* background-color: #e6e4e4; */
+  background-color: #edebeb;
+  background-image: url("../../images/huellas\ 2.png");
+}
+
+.imageLanding {
+  margin-top: 40px;
+  height: 800px;
+}
+
+.imageLanding img {
+  width: 700px;
+}
+
+.welcomeLanding {
+  display: flex;
+  flex-direction: column;
+}
+
+.welcomeLanding h2 {
+  font-weight: 600;
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  color: #373435;
+}
+
+.welcomeLanding img {
+  height: 110px;
+}
+
+.buttonLanding {
+  margin-top: 4rem;
+  background-color: rgb(255, 213, 63);
+  padding: 0.25rem;
+  border-radius: 20px;
+  width: 200px;
+  height: 40px;
+  text-align: center;
+}
+
+.buttonLanding:hover {
+  box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.5);
+  background-color: #11223a;
+}
+
+.buttonLanding:hover .linkLanding {
+  color: white;
+}
+
+.linkLanding {
+  text-decoration: none;
+  font-size: 1.25rem;
+  color: #373435;
+}
+
+/* Para pantallas pequeñas (hasta 576px) */
+@media (max-width: 576px) {
+  .container {
+    flex-direction: column;
+    align-items: space-evenly;
+    justify-content: space-evenly;
+  }
+
+  .imageLanding {
+    order: 1;
+    margin-top: 0px;
+    height: 300px;
+  }
+
+  .imageLanding img {
+    width: 300px;
+  }
+
+  .welcomeLanding h2 {
+    font-size: 1.5rem;
+  }
+
+  .welcomeLanding img {
+    height: 60px;
+  }
+
+  .buttonLanding {
+    margin-top: 2rem;
+    width: 130px;
+    height: 35px;
+  }
+
+  .linkLanding {
+    text-decoration: none;
+    font-size: 1rem;
+    color: #373435;
+  }
+}
+
+/* Para pantallas medianas (de 577px a 768px) */
+@media (min-width: 577px) and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: space-evenly;
+    justify-content: space-evenly;
+  }
+
+  .imageLanding {
+    order: 1;
+    margin-top: 0px;
+    height: 400px;
+  }
+
+  .imageLanding img {
+    width: 400px;
+  }
+
+  .welcomeLanding h2 {
+    font-size: 2rem;
+  }
+
+  .welcomeLanding img {
+    height: 70px;
+  }
+
+  .buttonLanding {
+    margin-top: 2rem;
+    width: 150px;
+  }
+}
+
+/* Para pantallas grandes (de 769px a 992px) */
+@media (min-width: 769px) and (max-width: 992px) {
+  .imageLanding {
+    margin-top: 0px;
+    height: 500px;
+  }
+
+  .imageLanding img {
+    width: 450px;
+  }
+
+  .welcomeLanding h2 {
+    font-size: 2rem;
+  }
+
+  .welcomeLanding img {
+    height: 70px;
+  }
+
+  .buttonLanding {
+    margin-top: 2rem;
+    width: 150px;
+  }
+}
+
+/* Para pantallas extra grandes (de 993px a 1200px) */
+@media (min-width: 993px) and (max-width: 1200px) {
+  .imageLanding {
+    margin-top: 0px;
+    height: 600px;
+  }
+
+  .imageLanding img {
+    width: 550px;
+  }
+
+  .welcomeLanding h2 {
+    font-size: 2.75rem;
+  }
+
+  .welcomeLanding img {
+    height: 90px;
+  }
+
+  .buttonLanding {
+    margin-top: 3rem;
+    width: 170px;
+  }
+}
+
+/* Para pantallas muy grandes (de 1201px a 1400px) */
+@media (min-width: 1201px) and (max-width: 1400px) {
+  .imageLanding {
+    margin-top: 0px;
+    height: 700px;
+  }
+
+  .imageLanding img {
+    width: 650px;
+  }
+
+  .welcomeLanding img {
+    height: 100px;
+  }
+}
