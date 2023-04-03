@@ -1,6 +1,5 @@
 import React from "react";
 import firulaisImage from "../../images/firulais.jpeg";
-import firulaisImage1 from "../../images/firulais1.jpg";
 import styles from "./NewDog.module.css";
 
 const NewDog = ({

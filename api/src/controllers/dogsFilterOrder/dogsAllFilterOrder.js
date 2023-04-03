@@ -25,6 +25,7 @@ const dogsAllFilterOrder = ({ temperament, filter, order }, dogsAll) => {
     return dogsFilterOrder;
   }
 
+  //Temperaments
   if (!filter && !order && temperament) {
     const dogsTemperament = dogsFilterTemperaments(dogsAll, temperament);
 
@@ -32,11 +33,17 @@ const dogsAllFilterOrder = ({ temperament, filter, order }, dogsAll) => {
   }
 
   if (filter && !order && temperament) {
-    const dogsAllFilter = dogsFilter(dogsAll, filter);
-    const dogsTemperament = dogsFilterTemperaments(dogsAllFilter, temperament);
+    const dogsTemperament = dogsFilterTemperaments(dogsAll, temperament);
+    const dogsAllFilter = dogsFilter(dogsTemperament, filter);
 
-    console.log("aaaaaaa", dogsTemperament);
-    return dogsTemperament;
+    return dogsAllFilter;
+  }
+
+  if (!filter && order && temperament) {
+    const dogsTemperament = dogsFilterTemperaments(dogsAll, temperament);
+    const dogsTempOrder = dogsOrder(dogsTemperament, order);
+
+    return dogsTempOrder;
   }
 
   if (filter && order && temperament) {

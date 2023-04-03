@@ -61,7 +61,7 @@ const Home = () => {
             <Select />
           </div>
 
-          <Cards />
+          <Cards id="sectionBelow" />
           <Paginado />
         </div>
       )}

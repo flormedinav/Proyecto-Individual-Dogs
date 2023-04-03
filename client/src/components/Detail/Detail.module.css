@@ -1,5 +1,6 @@
 .containerDetail {
-  height: 850px;
+  /* height: 850px; */
+  height: 90vh;
   padding-top: 100px;
   display: flex;
   flex-direction: column;
@@ -20,6 +21,7 @@
 
 .divImageDetail img {
   border-radius: 50px;
+  max-width: 600px;
   height: 480px;
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
 }
@@ -127,7 +129,7 @@
 }
 
 .imgErrors {
-  height: 630px;
+  height: 550px;
 }
 
 .textError {
@@ -165,6 +167,7 @@
   }
 
   .divImageDetail img {
+    max-width: 320px;
     height: 250px;
     margin-right: 10px;
     margin-left: 10px;
@@ -211,6 +214,7 @@
   }
 
   .textError {
+    padding-top: 0rem;
     padding-left: 1rem;
     font-size: 2rem;
   }
@@ -219,6 +223,10 @@
     padding-left: 1rem;
     padding-right: 1rem;
     font-size: 1.5rem;
+  }
+
+  .divErrorsDetail {
+    height: 71vh;
   }
 }
 
@@ -294,6 +302,10 @@
   .pError {
     padding-left: 2rem;
     font-size: 1.5rem;
+  }
+
+  .divErrorsDetail {
+    height: 71vh;
   }
 }
 
@@ -372,6 +384,10 @@
     padding-left: 2rem;
     font-size: 1.5rem;
   }
+
+  .divErrorsDetail {
+    height: 71vh;
+  }
 }
 
 /* Para pantallas extra grandes (de 993px a 1200px) */
@@ -382,6 +398,7 @@
   }
 
   .divImageDetail img {
+    max-width: 500px;
     height: 400px;
     margin-right: 20px;
     margin-left: 20px;
