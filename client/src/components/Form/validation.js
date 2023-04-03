@@ -12,7 +12,7 @@ const validation = ({
   weightMax,
   heightMin,
   heightMax,
-  temperament,
+  temperaments,
   image,
 }) => {
   const errors = {};
@@ -92,10 +92,10 @@ const validation = ({
   }
 
   //Validation temperaments
-  if (temperament.length === 0) {
-    errors.temperament = `Temperaments ${errorCompleted}`;
-  } else if (temperament.length < 3) {
-    errors.temperament = "Must choose at least 3 temperaments";
+  if (temperaments.length === 0) {
+    errors.temperaments = `Temperaments ${errorCompleted}`;
+  } else if (temperaments.length < 3) {
+    errors.temperaments = "Must choose at least 3 temperaments";
   }
 
   //Validation image

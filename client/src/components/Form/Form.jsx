@@ -23,7 +23,7 @@ const Form = () => {
     weightMax: "",
     heightMin: "",
     heightMax: "",
-    temperament: [],
+    temperaments: [],
     image: "",
   });
   const [errors, setErrors] = useState({});
@@ -58,14 +58,14 @@ const Form = () => {
   const handleSelectChange = (e) => {
     const value = e.target.value;
 
-    const alreadyAdded = createDogsForm.temperament.includes(value);
+    const alreadyAdded = createDogsForm.temperaments.includes(value);
 
     if (alreadyAdded) {
       alert("El temperamento ya ha sido agregado");
       return;
     }
 
-    if (createDogsForm.temperament.length > 5) {
+    if (createDogsForm.temperaments.length > 5) {
       alert("No se pueden agregar más temperamentos");
       return;
     }
@@ -73,27 +73,27 @@ const Form = () => {
     setErrors(
       validation({
         ...createDogsForm,
-        temperament: [...createDogsForm.temperament, value],
+        temperaments: [...createDogsForm.temperaments, value],
       })
     );
 
     setCreateDogsForm({
       ...createDogsForm,
-      temperament: [...createDogsForm.temperament, value],
+      temperaments: [...createDogsForm.temperaments, value],
     });
   };
 
-  const temperamentForm = [...createDogsForm.temperament];
+  const temperamentForm = [...createDogsForm.temperaments];
 
   const removeTemperaments = (e) => {
     e.preventDefault();
     const value = e.target.value;
-    const updatedTemperaments = createDogsForm.temperament.filter((temp) => {
+    const updatedTemperaments = createDogsForm.temperaments.filter((temp) => {
       return temp !== value;
     });
     setCreateDogsForm({
       ...createDogsForm,
-      temperament: updatedTemperaments,
+      temperaments: updatedTemperaments,
     });
   };
 
@@ -125,10 +125,11 @@ const Form = () => {
       !errors.weightMax &&
       !errors.heightMin &&
       !errors.heightMax &&
-      !errors.temperament &&
+      !errors.temperaments &&
       !errors.image
     ) {
       dispatch(postDogs(createDogsForm));
+      console.log("Info DOGS", createDogsForm);
       setCreateDogsForm({
         name: "",
         lifeSpanMin: "",
@@ -137,7 +138,7 @@ const Form = () => {
         weightMax: "",
         heightMin: "",
         heightMax: "",
-        temperament: [],
+        temperaments: [],
         image: "",
       });
       alert("Your dog has been created successfully");
@@ -282,8 +283,8 @@ const Form = () => {
                     <option value={temp.name}>{temp.name}</option>
                   ))}
                 </select>
-                {errors.temperament && (
-                  <p className={styles.errors}>{errors.temperament}</p>
+                {errors.temperaments && (
+                  <p className={styles.errors}>{errors.temperaments}</p>
                 )}
               </div>
 
@@ -333,7 +334,7 @@ const Form = () => {
             weightMax={createDogsForm.weightMax}
             heightMin={createDogsForm.heightMin}
             heightMax={createDogsForm.heightMax}
-            temperament={createDogsForm.temperament}
+            temperaments={createDogsForm.temperaments}
             image={createDogsForm.image}
           />
         </div>

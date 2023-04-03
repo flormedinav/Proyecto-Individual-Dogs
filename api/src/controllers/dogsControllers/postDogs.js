@@ -12,6 +12,7 @@ const postDogs = async (req, res) => {
       lifeSpanMin,
       lifeSpanMax,
       temperaments,
+      // tamanio,
     } = req.body;
 
     if (
@@ -23,6 +24,7 @@ const postDogs = async (req, res) => {
       !lifeSpanMin ||
       !lifeSpanMax ||
       !temperaments
+      // !tamanio
     )
       throw new Error("Missing required data");
 
@@ -34,6 +36,7 @@ const postDogs = async (req, res) => {
       weightMin: parseInt(weightMin),
       weightMax: parseInt(weightMax),
       lifeSpan: `${lifeSpanMin} - ${lifeSpanMax} years`,
+      // tamanio,
     };
 
     const createNewDog = await Dog.create(newDog);

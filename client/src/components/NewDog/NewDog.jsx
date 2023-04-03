@@ -10,7 +10,7 @@ const NewDog = ({
   weightMax,
   heightMin,
   heightMax,
-  temperament,
+  temperaments,
   image,
 }) => {
   return (
@@ -75,7 +75,7 @@ const NewDog = ({
 
         <div>
           <p className={styles.titleTemperaments}>Temperaments</p>
-          {temperament.length === 0 ? (
+          {temperaments.length === 0 ? (
             <div className={styles.divItemsTemperaments}>
               <p className={styles.itemTemperament}>Friendly</p>
               <p className={styles.itemTemperament}>Docile</p>
@@ -84,7 +84,7 @@ const NewDog = ({
             </div>
           ) : (
             <div className={styles.divItemsTemperaments}>
-              {temperament.map((temp) => (
+              {temperaments.map((temp) => (
                 <p className={styles.itemTemperament}>{temp}</p>
               ))}
             </div>
