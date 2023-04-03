@@ -24,8 +24,8 @@ const Cards = () => {
           {allDogs && allDogs.length > 0 ? (
             allDogs.map((dog) => (
               <Card
-                className={styles.itemsContainerCards}
                 key={dog.id}
+                className={styles.itemsContainerCards}
                 id={dog.id}
                 name={dog.name}
                 temperaments={dog.temperaments}

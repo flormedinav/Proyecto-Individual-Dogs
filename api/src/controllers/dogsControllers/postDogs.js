@@ -12,7 +12,6 @@ const postDogs = async (req, res) => {
       lifeSpanMin,
       lifeSpanMax,
       temperaments,
-      // createdInDb,
     } = req.body;
 
     if (
@@ -35,7 +34,6 @@ const postDogs = async (req, res) => {
       weightMin: parseInt(weightMin),
       weightMax: parseInt(weightMax),
       lifeSpan: `${lifeSpanMin} - ${lifeSpanMax} years`,
-      // createdInDb,
     };
 
     const createNewDog = await Dog.create(newDog);

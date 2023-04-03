@@ -24,7 +24,7 @@ const getTemperament = async (req, res) => {
 
     return res.status(200).send(temperamentAll);
   } catch (error) {
-    return res.status(200).send("Error loading to database");
+    return res.status(500).send("Error loading to database");
   }
 };
 

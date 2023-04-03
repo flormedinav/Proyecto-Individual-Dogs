@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 import styles from "./Card.module.css";
 
 const Card = ({ id, name, temperaments, image, weightMin, weightMax }) => {
+  let i = 1;
+
   return (
     <div className={styles.containerCard}>
       <div className={styles.divImageTittle}>
@@ -28,7 +30,9 @@ const Card = ({ id, name, temperaments, image, weightMin, weightMax }) => {
         {temperaments ? (
           <div className={styles.divItemsTemperaments}>
             {temperaments.slice(0, 4).map((temp) => (
-              <p className={styles.itemTemperament}>{temp.name}</p>
+              <p key={i++} className={styles.itemTemperament}>
+                {temp.name}
+              </p>
             ))}
           </div>
         ) : (
