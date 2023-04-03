@@ -129,7 +129,7 @@ const Form = () => {
       !errors.image
     ) {
       dispatch(postDogs(createDogsForm));
-      console.log("Info DOGS", createDogsForm);
+
       setCreateDogsForm({
         name: "",
         lifeSpanMin: "",
