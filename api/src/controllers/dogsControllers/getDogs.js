@@ -3,8 +3,8 @@ const { API_KEY } = process.env;
 const axios = require("axios");
 const { Dog, Temperament } = require("../../db");
 // const dogsName = require("../dogsFilterOrder/dogsName");
-const dogsAllFilterOrder = require("../dogsFilterOrder/dogsAllFilterOrder");
-const dogsPaginado = require("../dogsPaginado/dogsPaginado");
+const dogsAllFilterOrder = require("../../helpers/dogsFilterOrder/dogsAllFilterOrder");
+const dogsPaginado = require("../../helpers/dogsPaginado/dogsPaginado");
 
 const URL = `https://api.thedogapi.com/v1/breeds?api_key=${API_KEY}`;
 
