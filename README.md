@@ -76,11 +76,7 @@ Utilice el administrador de paquetes npm para instalar. (Recuerde usar este coma
 
 **Imágenes**
 
-![Landing Page](https://drive.google.com/file/d/1RZsrYk4jlTcyWTW1UbzGkjn40x7t6cni/view?usp=sharing)
-
-**Video**
-
-[![Landing Page]](https://drive.google.com/file/d/1nHgZ55gUAta2vz4JCbw7LRjL3fLPoWGa/view?usp=sharing)
+[![Landing Page]](./client/src/assets/imagesPI/LandingPage.PNG)
 
 <br />
 
@@ -88,26 +84,50 @@ Utilice el administrador de paquetes npm para instalar. (Recuerde usar este coma
 
 **Imágenes**
 
-![Home Page I](./imagesPI/Home1.PNG)
+![Home Page I](./client/src/assets/imagesPI/Home1.PNG)
 
 <br />
 
-![Home Page II](./imagesPI/Home2.PNG)
+![Home Page II](./client/src/assets/imagesPI/Home2.PNG)
 
 <br />
 
-![Home Page III](./imagesPI/Home3.PNG)
+![Home Page III](./client/src/assets/imagesPI/Home3.PNG)
 
 <br />
 
 **📍 DETAIL PAGE |**
 
+![Detail Page](./client/src/assets/imagesPI/DetailPage.PNG)
+
 <br />
 
 **📍 FORM PAGE |**:
 
+![Form Page I](./client/src/assets/imagesPI/Formulario.PNG)
+
 <br />
 
----
+![Form Page II](./client/src/assets/imagesPI/Formulario2.PNG)
+
+<br />
+
+**📍 ABOUT PAGE |**:
+
+![About Page](./client/src/assets/imagesPI/About.PNG)
+
+<br />
+
+**📍 ERRORS |**:
+
+![Error I](./client/src/assets/imagesPI/Error1.PNG)
+
+<br />
+
+![Error I](./client/src/assets/imagesPI/Error2.PNG)
+
+<br />
+
+![Error I](./client/src/assets/imagesPI/Error3.PNG)
 
 <br />
