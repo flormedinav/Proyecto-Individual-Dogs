@@ -1,30 +1,30 @@
-import React from "react";
-import { useState, useEffect } from "react";
-import { useSelector, useDispatch } from "react-redux";
-import validation from "./validation";
-import Loading from "../Loanding/Loading";
+import React from 'react';
+import { useState, useEffect } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+import validation from './validation';
+import Loading from '../Loanding/Loading';
 import {
   getTemperament,
   loadingPage,
   postDogs,
   getCreateImage,
-} from "../../redux/actions";
-import NewDog from "../NewDog/NewDog";
-import styles from "./Form.module.css";
+} from '../../redux/actions';
+import NewDog from '../NewDog/NewDog';
+import styles from './Form.module.css';
 
 const Form = () => {
   const { temperaments, loading } = useSelector((state) => state);
   const dispatch = useDispatch();
   const [createDogsForm, setCreateDogsForm] = useState({
-    name: "",
-    lifeSpanMin: "",
-    lifeSpanMax: "",
-    weightMin: "",
-    weightMax: "",
-    heightMin: "",
-    heightMax: "",
+    name: '',
+    lifeSpanMin: '',
+    lifeSpanMax: '',
+    weightMin: '',
+    weightMax: '',
+    heightMin: '',
+    heightMax: '',
     temperaments: [],
-    image: "",
+    image: '',
   });
   const [errors, setErrors] = useState({});
 
@@ -61,12 +61,12 @@ const Form = () => {
     const alreadyAdded = createDogsForm.temperaments.includes(value);
 
     if (alreadyAdded) {
-      alert("El temperamento ya ha sido agregado");
+      alert('El temperamento ya ha sido agregado');
       return;
     }
 
     if (createDogsForm.temperaments.length > 5) {
-      alert("No se pueden agregar más temperamentos");
+      alert('No se pueden agregar más temperamentos');
       return;
     }
 
@@ -131,19 +131,19 @@ const Form = () => {
       dispatch(postDogs(createDogsForm));
 
       setCreateDogsForm({
-        name: "",
-        lifeSpanMin: "",
-        lifeSpanMax: "",
-        weightMin: "",
-        weightMax: "",
-        heightMin: "",
-        heightMax: "",
+        name: '',
+        lifeSpanMin: '',
+        lifeSpanMax: '',
+        weightMin: '',
+        weightMax: '',
+        heightMin: '',
+        heightMax: '',
         temperaments: [],
-        image: "",
+        image: '',
       });
-      alert("Your dog has been created successfully");
+      alert('Your dog has been created successfully');
     } else {
-      alert("Something went wrong. Please try again");
+      alert('Something went wrong. Please try again');
     }
   };
 
@@ -157,14 +157,14 @@ const Form = () => {
             <h2 className={styles.titleForm}>Create new breed</h2>
             <form onSubmit={handleSubmit}>
               <div className={styles.divInputName}>
-                <label htmlFor="name" className={styles.labelForm}>
+                <label htmlFor='name' className={styles.labelForm}>
                   Name
                 </label>
                 <input
                   className={styles.inputForm}
-                  name="name"
+                  name='name'
                   value={createDogsForm.name}
-                  type="text"
+                  type='text'
                   onChange={handleInputChange}
                 />
                 {errors.name && <p className={styles.errors}>{errors.name}</p>}
@@ -172,13 +172,13 @@ const Form = () => {
 
               <div className={styles.divValueDoble}>
                 <div className={styles.divInput}>
-                  <label htmlFor="lifeSpanMin" className={styles.labelForm}>
+                  <label htmlFor='lifeSpanMin' className={styles.labelForm}>
                     Minimum life span
                   </label>
                   <input
                     className={styles.inputForm}
-                    name="lifeSpanMin"
-                    type="number"
+                    name='lifeSpanMin'
+                    type='number'
                     value={createDogsForm.lifeSpanMin}
                     onChange={handleInputChange}
                   />
@@ -188,13 +188,13 @@ const Form = () => {
                 </div>
 
                 <div className={styles.divInput}>
-                  <label htmlFor="lifeSpanMax" className={styles.labelForm}>
+                  <label htmlFor='lifeSpanMax' className={styles.labelForm}>
                     Maximum life span
                   </label>
                   <input
                     className={styles.inputForm}
-                    name="lifeSpanMax"
-                    type="number"
+                    name='lifeSpanMax'
+                    type='number'
                     value={createDogsForm.lifeSpanMax}
                     onChange={handleInputChange}
                   />
@@ -204,13 +204,13 @@ const Form = () => {
                 </div>
 
                 <div className={styles.divInput}>
-                  <label htmlFor="weightMin" className={styles.labelForm}>
+                  <label htmlFor='weightMin' className={styles.labelForm}>
                     Minimum weight
                   </label>
                   <input
                     className={styles.inputForm}
-                    name="weightMin"
-                    type="number"
+                    name='weightMin'
+                    type='number'
                     value={createDogsForm.weightMin}
                     onChange={handleInputChange}
                   />
@@ -220,13 +220,13 @@ const Form = () => {
                 </div>
 
                 <div className={styles.divInput}>
-                  <label htmlFor="weightMax" className={styles.labelForm}>
+                  <label htmlFor='weightMax' className={styles.labelForm}>
                     Maximum weight
                   </label>
                   <input
                     className={styles.inputForm}
-                    type="number"
-                    name="weightMax"
+                    type='number'
+                    name='weightMax'
                     value={createDogsForm.weightMax}
                     onChange={handleInputChange}
                   />
@@ -236,13 +236,13 @@ const Form = () => {
                 </div>
 
                 <div className={styles.divInput}>
-                  <label htmlFor="heightMin" className={styles.labelForm}>
+                  <label htmlFor='heightMin' className={styles.labelForm}>
                     Minimum height
                   </label>
                   <input
                     className={styles.inputForm}
-                    type="number"
-                    name="heightMin"
+                    type='number'
+                    name='heightMin'
                     value={createDogsForm.heightMin}
                     onChange={handleInputChange}
                   />
@@ -252,13 +252,13 @@ const Form = () => {
                 </div>
 
                 <div className={styles.divInput}>
-                  <label htmlFor="heightMax" className={styles.labelForm}>
+                  <label htmlFor='heightMax' className={styles.labelForm}>
                     Maximum height
                   </label>
                   <input
                     className={styles.inputForm}
-                    type="number"
-                    name="heightMax"
+                    type='number'
+                    name='heightMax'
                     value={createDogsForm.heightMax}
                     onChange={handleInputChange}
                   />
@@ -269,7 +269,7 @@ const Form = () => {
               </div>
 
               <div className={styles.divInputTemperaments}>
-                <label htmlFor="temperament" className={styles.labelForm}>
+                <label htmlFor='temperament' className={styles.labelForm}>
                   Temperaments
                 </label>
                 <select
@@ -320,8 +320,8 @@ const Form = () => {
               </div>
 
               <input
-                type="submit"
-                value="Create"
+                type='submit'
+                value='Create'
                 className={styles.buttonSubmit}
               />
             </form>
