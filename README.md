@@ -103,10 +103,10 @@ Utilice el administrador de paquetes npm para instalar. (Recuerde usar este coma
 
 - Frontend -> dentro de ./cliente
 
-**npm start**
+`npm start`
 
 - Backend -> dentro de ./api
 
-**npm start**
+`npm start`
 
 <br />
