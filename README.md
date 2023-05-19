@@ -6,8 +6,6 @@
 
 <br />
 
----
-
 ## **📌 DESCRIPCIÓN DEL PROYECTO**
 
 - En ella se podrá:
@@ -23,18 +21,77 @@
 ✅ Ver el detalle de cada raza.
 <br />
 ✅ Crear un nuevo perro mediante un formulario dinámico.
+<br />
+
+**Observación 👀** El sitio es completamente responsive.
 
 <br />
 
----
+## **🦾 TECNOLOGÍAS**
 
-## **⚠️ TECNOLOGÍAS**
-
-- **React**, **Redux**, **Node**, **Express** y **Sequelize**
+- **JavaScript**, **HTML**, **CSS**, **React**, **Redux**, **Node**, **Express**, **Sequelize**, **PostgreSQL**
 
 <br />
 
----
+## **📍 LANDING PAGE**
+
+**Imágenes**
+
+![Landing Page](./client/src/assets/imagesPI/LandingPage.PNG)
+
+<br />
+
+## **📍 HOME PAGE**
+
+**Imágenes**
+
+![Home Page I](./client/src/assets/imagesPI/Home1.PNG)
+
+<br />
+
+![Home Page II](./client/src/assets/imagesPI/Home2.PNG)
+
+<br />
+
+![Home Page III](./client/src/assets/imagesPI/Home3.PNG)
+
+<br />
+
+## **📍 DETAIL PAGE**
+
+![Detail Page](./client/src/assets/imagesPI/DetailPage.PNG)
+
+<br />
+
+## **📍 FORM PAGE**
+
+![Form Page I](./client/src/assets/imagesPI/Formulario.PNG)
+
+<br />
+
+![Form Page II](./client/src/assets/imagesPI/Formulario2.PNG)
+
+<br />
+
+## **📍 ABOUT PAGE**
+
+![About Page](./client/src/assets/imagesPI/About.PNG)
+
+<br />
+
+## **📍 ERRORS**
+
+![Error I](./client/src/assets/imagesPI/Error1.PNG)
+
+<br />
+
+![Error I](./client/src/assets/imagesPI/Error2.PNG)
+
+<br />
+
+![Error I](./client/src/assets/imagesPI/Error3.PNG)
+
+<br />
 
 ## **⚠️ REQUISITOS PARA INSTALAR LOCALMENTE**
 
@@ -52,7 +109,7 @@ Reemplazar `usuariodepostgres` y `passwordDePostgres` con tus propias credencial
 
 <br />
 
-## **⚠️ INSTALACIÓN**
+**⚠️ INSTALACIÓN**
 
 Utilice el administrador de paquetes npm para instalar. (Recuerde usar este comando dentro de ./client y dentro de ./api):
 
@@ -60,7 +117,7 @@ Utilice el administrador de paquetes npm para instalar. (Recuerde usar este coma
 
 <br />
 
-## **⚠️ EJECUCIÓN LOCAL**
+**⚠️ EJECUCIÓN LOCAL**
 
 - Frontend -> dentro de ./cliente
 
@@ -69,65 +126,5 @@ Utilice el administrador de paquetes npm para instalar. (Recuerde usar este coma
 - Backend -> dentro de ./api
 
 **npm start**
-
-<br />
-
-**📍 LANDING PAGE |**
-
-**Imágenes**
-
-[![Landing Page]](./client/src/assets/imagesPI/LandingPage.PNG)
-
-<br />
-
-**📍 HOME PAGE |**
-
-**Imágenes**
-
-![Home Page I](./client/src/assets/imagesPI/Home1.PNG)
-
-<br />
-
-![Home Page II](./client/src/assets/imagesPI/Home2.PNG)
-
-<br />
-
-![Home Page III](./client/src/assets/imagesPI/Home3.PNG)
-
-<br />
-
-**📍 DETAIL PAGE |**
-
-![Detail Page](./client/src/assets/imagesPI/DetailPage.PNG)
-
-<br />
-
-**📍 FORM PAGE |**:
-
-![Form Page I](./client/src/assets/imagesPI/Formulario.PNG)
-
-<br />
-
-![Form Page II](./client/src/assets/imagesPI/Formulario2.PNG)
-
-<br />
-
-**📍 ABOUT PAGE |**:
-
-![About Page](./client/src/assets/imagesPI/About.PNG)
-
-<br />
-
-**📍 ERRORS |**:
-
-![Error I](./client/src/assets/imagesPI/Error1.PNG)
-
-<br />
-
-![Error I](./client/src/assets/imagesPI/Error2.PNG)
-
-<br />
-
-![Error I](./client/src/assets/imagesPI/Error3.PNG)
 
 <br />
