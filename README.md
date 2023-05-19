@@ -4,8 +4,6 @@
 
 - Construir una Single Page Application de DOGS 🐶.
 
-<br />
-
 ## **📌 DESCRIPCIÓN DEL PROYECTO**
 
 - En ella se podrá:
@@ -25,21 +23,15 @@
 
 **Observación 👀** El sitio es completamente responsive.
 
-<br />
-
 ## **🦾 TECNOLOGÍAS**
 
 - **JavaScript**, **HTML**, **CSS**, **React**, **Redux**, **Node**, **Express**, **Sequelize**, **PostgreSQL**
-
-<br />
 
 ## **📍 LANDING PAGE**
 
 **Imágenes**
 
 ![Landing Page](./client/src/assets/imagesPI/LandingPage.PNG)
-
-<br />
 
 ## **📍 HOME PAGE**
 
@@ -55,13 +47,9 @@
 
 ![Home Page III](./client/src/assets/imagesPI/Home3.PNG)
 
-<br />
-
 ## **📍 DETAIL PAGE**
 
 ![Detail Page](./client/src/assets/imagesPI/DetailPage.PNG)
-
-<br />
 
 ## **📍 FORM PAGE**
 
@@ -71,13 +59,9 @@
 
 ![Form Page II](./client/src/assets/imagesPI/Formulario2.PNG)
 
-<br />
-
 ## **📍 ABOUT PAGE**
 
 ![About Page](./client/src/assets/imagesPI/About.PNG)
-
-<br />
 
 ## **📍 ERRORS**
 
@@ -90,8 +74,6 @@
 <br />
 
 ![Error I](./client/src/assets/imagesPI/Error3.PNG)
-
-<br />
 
 ## **⚠️ REQUISITOS PARA INSTALAR LOCALMENTE**
 
