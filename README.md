@@ -95,9 +95,7 @@ Reemplazar `usuariodepostgres` y `passwordDePostgres` con tus propias credencial
 
 Utilice el administrador de paquetes npm para instalar. (Recuerde usar este comando dentro de ./client y dentro de ./api):
 
-**npm install**
-
-<br />
+`npm start`
 
 **⚠️ EJECUCIÓN LOCAL**
 
