@@ -88,15 +88,15 @@ Utilice el administrador de paquetes npm para instalar. (Recuerde usar este coma
 
 **Imágenes**
 
-![Home Page I](https://drive.google.com/file/d/1VrXp_7nkvVmbe3_cFdfFb4JH_bJYQN7T/view?usp=sharing)
+![Home Page I](./imagesPI/Home1.PNG)
 
 <br />
 
-![Home Page II](https://drive.google.com/file/d/1Vl6yn8blJwnlihf73IcX0M22GnwzFTEb/view?usp=sharing)
+![Home Page II](./imagesPI/Home2.PNG)
 
 <br />
 
-![Home Page III](https://drive.google.com/file/d/167euu4NVNhb30l4K1Vg-K9N6Xq_nWG0l/view?usp=sharing)
+![Home Page III](./imagesPI/Home3.PNG)
 
 <br />
 
