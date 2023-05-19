@@ -1,5 +1,3 @@
-![HenryLogo](https://d31uz8lwfmyn8g.cloudfront.net/Assets/logo-henry-white-lg.png)
-
 # **DOGS** | Proyecto Individual
 
 ## **📌 OBJETIVOS**
@@ -15,10 +13,15 @@
 - En ella se podrá:
 
 ✅ Buscar razas de perros.
+<br />
 ✅ Filtrar por razas y/o temperamentos.
+<br />
 ✅ Ordenar por peso y alfabéticamente.
+<br />
 ✅ Filtrar y ordenar de manera combinada.
+<br />
 ✅ Ver el detalle de cada raza.
+<br />
 ✅ Crear un nuevo perro mediante un formulario dinámico.
 
 <br />
@@ -49,45 +52,51 @@ Reemplazar `usuariodepostgres` y `passwordDePostgres` con tus propias credencial
 
 <br />
 
----
-
 ## **⚠️ INSTALACIÓN**
 
 Utilice el administrador de paquetes npm para instalar. (Recuerde usar este comando dentro de ./client y dentro de ./api):
 
-```npm install
-
-```
+**npm install**
 
 <br />
-
----
 
 ## **⚠️ EJECUCIÓN LOCAL**
 
 - Frontend -> dentro de ./cliente
 
-```npm start
-
-```
+**npm start**
 
 - Backend -> dentro de ./api
 
-```npm start
-
-```
+**npm start**
 
 <br />
 
----
-
 **📍 LANDING PAGE |**
 
-[![Landing Page](https://drive.google.com/file/d/1nHgZ55gUAta2vz4JCbw7LRjL3fLPoWGa/view?usp=sharing)](https://drive.google.com/file/d/1nHgZ55gUAta2vz4JCbw7LRjL3fLPoWGa/view?usp=sharing)
+**Imágenes**
+
+![Landing Page](https://drive.google.com/file/d/1RZsrYk4jlTcyWTW1UbzGkjn40x7t6cni/view?usp=sharing)
+
+**Video**
+
+[![Landing Page]](https://drive.google.com/file/d/1nHgZ55gUAta2vz4JCbw7LRjL3fLPoWGa/view?usp=sharing)
 
 <br />
 
 **📍 HOME PAGE |**
+
+**Imágenes**
+
+![Home Page I](https://drive.google.com/file/d/1VrXp_7nkvVmbe3_cFdfFb4JH_bJYQN7T/view?usp=sharing)
+
+<br />
+
+![Home Page II](https://drive.google.com/file/d/1Vl6yn8blJwnlihf73IcX0M22GnwzFTEb/view?usp=sharing)
+
+<br />
+
+![Home Page III](https://drive.google.com/file/d/167euu4NVNhb30l4K1Vg-K9N6Xq_nWG0l/view?usp=sharing)
 
 <br />
 
